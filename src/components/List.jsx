@@ -14,7 +14,6 @@ import * as Icons from '@wordpress/icons';
 import IconItem from './IconItem';
 
 const List = () => {
-	console.log( Icons );
 	return (
 		<Grid container spacing={ 2 }>
 			{
@@ -24,8 +23,8 @@ const List = () => {
 					}
 
 					return (
-						<Grid item  key={ key } xs={ 12 } md={ 3 }>
-							<IconItem icon={ Icons[ key ] } size={ 64 } />
+						<Grid item key={ key } xs={ 6 } md={ 3 }>
+							<IconItem icon={ Icons[ key ] } size={ 64 } name={ key } />
 						</Grid>
 					);
 				} )
