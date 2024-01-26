@@ -14,6 +14,7 @@ const Item = styled.div`
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    inline-size: 200px;
 `;
 
 const IconItem = ( { icon, size, name } ) => {
