@@ -13,7 +13,6 @@ import Item from "./item";
 import React from "react";
 
 export default function IconList() {
-    console.log(typeof Icons);
     const [ foundIcons, setFoundIcons ] = useState<Record<string, typeof Icons[keyof typeof Icons]>>(Icons);
 
     const filterList = (event: React.SyntheticEvent<Element, Event>, value: string | null) => {

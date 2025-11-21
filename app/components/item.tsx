@@ -1,4 +1,3 @@
-import { ReactElement, JSXElementConstructor } from "react";
 import { IconButton } from "@mui/material";
 import { Icon } from "@wordpress/icons";
 

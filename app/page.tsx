@@ -1,4 +1,5 @@
 import IconList from "./components/list";
+import Instructions from "./components/instructions";
 
 export default function Home() {
   return (
@@ -11,6 +12,8 @@ export default function Home() {
         </p>
 
         <h2 className="my-6 text-2xl font-semibold">Lista de íconos</h2>
+
+        <Instructions />
 
         <IconList />
       </div>
