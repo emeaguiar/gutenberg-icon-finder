@@ -24,7 +24,7 @@ export default function Home() {
               href="https://www.marioaguiar.dev"
               target="_blank"
               rel="noopener noreferrer"
-              className="underline"
+              className="underline hover:no-underline"
             >
               Mario Aguiar
             </a>
