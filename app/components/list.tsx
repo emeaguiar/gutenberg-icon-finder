@@ -53,7 +53,7 @@ export default function IconList() {
                 }
 			/>
 
-            <div className="grid gap-4 grid-cols-2 w-full justify-center xl:grid-cols-5">
+            <div className="grid gap-4 grid-cols-2 w-full justify-center md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
                 {
                     Object.keys( foundIcons ).map( ( key ) => {
                         if ( 'Icon' === key ) {
