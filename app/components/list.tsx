@@ -10,6 +10,7 @@ import {
 import * as Icons from "@wordpress/icons";
 
 import Item from "./item";
+import React from "react";
 
 export default function IconList() {
     console.log(typeof Icons);

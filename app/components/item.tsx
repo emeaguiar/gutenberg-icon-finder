@@ -1,7 +1,9 @@
+import { ReactElement, JSXElementConstructor } from "react";
 import { IconButton } from "@mui/material";
 import { Icon } from "@wordpress/icons";
 
-export default function Item( { icon, size, name }: { icon: string, size: number, name: string } ) {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export default function Item( { icon, size, name }: { icon: any, size: number, name: string } ) {
     return (
         <div className="items-center flex flex-col gap-4 w-52">
             <IconButton>
