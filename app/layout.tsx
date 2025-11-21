@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v13-appRouter";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -32,6 +33,14 @@ export default function RootLayout({
           {children}
         </AppRouterCacheProvider>
       </body>
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-Y2WQZJBC5P" />
+      <Script id="google-analytics">
+        {`window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Y2WQZJBC5P');`}
+      </Script>
     </html>
   );
 }

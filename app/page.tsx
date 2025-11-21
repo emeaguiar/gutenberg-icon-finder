@@ -16,6 +16,20 @@ export default function Home() {
         <Instructions />
 
         <IconList />
+
+        <footer>
+          <p className="mt-12 text-xs text-center">
+            Hecho con ❤️ por{" "}
+            <a
+              href="https://www.marioaguiar.dev"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:no-underline"
+            >
+              Mario Aguiar
+            </a>
+          </p>
+        </footer>
       </div>
       
     </main>
