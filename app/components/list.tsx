@@ -4,7 +4,6 @@ import { useState } from "react";
 import {
     Autocomplete,
     TextField,
-    AutocompleteProps,
 } from "@mui/material";
 
 
@@ -43,8 +42,15 @@ export default function IconList() {
 				freeSolo
 				options={ Object.keys( Icons ) }
 				renderInput={ ( params ) => <TextField { ...params } label="Buscar" /> }
-				onChange={ filterList }
+				onInputChange={ filterList }
                 className="w-full mb-12"
+                slotProps={
+                    {
+                        popper: {
+                            placement: 'top',
+                        }
+                    }
+                }
 			/>
 
             <div className="grid gap-4 grid-cols-2 w-full justify-center xl:grid-cols-5">
